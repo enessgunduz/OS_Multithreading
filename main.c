@@ -39,9 +39,7 @@ void* computeSum(void* arg) {
                 break;
 
             case 3: // Method 3: Use local variable and synchronize with a mutex
-                pthread_mutex_lock(&mutex);
                 args->local_sqrt_sum += sqrt_x;
-                pthread_mutex_unlock(&mutex);
                 break;
 
             default:
